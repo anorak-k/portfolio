@@ -31,7 +31,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
+  background-color: #f2e7df !important;
   color: #fff !important;
   font-family: 'Rubik', sans-serif !important;
 }
