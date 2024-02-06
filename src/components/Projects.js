@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/brown-gradient.jpg";
 import projImg2 from "../assets/img/brown-gradient.jpg";
 import projImg3 from "../assets/img/brown-gradient.jpg";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../assets/img/piano-vector-nofloor-nobg.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
