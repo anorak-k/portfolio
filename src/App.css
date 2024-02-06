@@ -496,7 +496,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  }
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -576,11 +576,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer {
   padding: 0 0 50px 0;
   /* background-image: url('./assets/img/footer-bg.png'); */
-  background-image: url('./assets/img/website-laptop-side.jpeg');
-  /* background-position: center center; */
-  /* background-size: cover; */
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-color: #A98B6F;
 }
 .newsletter-bx {
   background: #FFFFFF;
