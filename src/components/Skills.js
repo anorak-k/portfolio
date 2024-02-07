@@ -5,6 +5,8 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/laptop-vec-nobg.png"
 
+const aboutMe = "I'm currently navigating the hustle and bustle of New York City while diving into the world of Computer Engineering at NYU. Originally from India, I've swapped the code chaos for the city lights. Before my NYU days, I was on a tech adventure as a full-stack software developer and consultant at Thoughtworks. I've tackled everything from backend wizardry to frontend finesse, ensuring that every line of code is as sharp as the skyline. When I'm not behind my laptop screen, you'll find me at the piano, playing melodies that sync with the rhythm of the city. And I love movies – whether it's an epic sci-fi or a classic drama, count me in for a movie marathon anytime. I believe in the power of code to build things that uplift people's lives, even if it's just a little bit. Whether it's creating innovative solutions or contributing to projects with a positive impact, I'm all about using technology to make a meaningful difference. Join me on this coding journey where every keystroke is a step towards creating a better, brighter world."
+
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -33,7 +35,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>About Me</h2>
-                        <p>I have been working as a full-time software engineer for almost 3 years.<br></br> Currently a Computer Engineering grad student at NYU.</p>
+                        <p>{aboutMe}</p>
                         <Carousel responsive={responsive} infinite={true} arrows = {false} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
