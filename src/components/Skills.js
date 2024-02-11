@@ -1,6 +1,13 @@
 import meter1 from "../assets/img/skills-computer.png";
 import meter2 from "../assets/img/skills-piano.png";
 import meter3 from "../assets/img/skills-movie.png";
+import cloud1 from "../assets/img/cloud.png";
+import cloud2 from "../assets/img/cloud(1).png";
+import cloud3 from "../assets/img/cloud(2).png";
+import cloudSm1 from "../assets/img/cloud-small.png";
+import cloudSm2 from "../assets/img/cloud-small(1).png";
+import cloudSm3 from "../assets/img/cloud-small(2).png";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../assets/img/laptop-vec-nobg.png"
@@ -34,27 +41,20 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>About Me</h2>
-                        <p>{aboutMe}</p>
-                        <Carousel responsive={responsive} infinite={true} arrows = {false} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                {/* <h3>Technology</h3> */}
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                {/* <h3>Music</h3> */}
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                {/* <h3>Movies</h3> */}
-                            </div>
-                        </Carousel>
+                        <div className="skill-h">
+                          <h2>About Me</h2>
+                        </div>
+                        <div className="skill-p">
+                          <p>{aboutMe}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      <img className="background-image-left" src={colorSharp}></img>
+      {/* <img className="cloud-sm1" src={cloudSm1}></img>
+      <img className="cloud-sm2" src={cloudSm2}></img>
+      <img className="cloud-sm3" src={cloudSm3}></img> */}
+      {/* <img className="background-image-left" src={colorSharp}></img> */}
     </section>
   )
 }

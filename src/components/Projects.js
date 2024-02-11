@@ -44,7 +44,8 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
-      <Container>
+
+      {/* <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
@@ -74,8 +75,29 @@ export const Projects = () => {
             </TrackVisibility>
           </Col>
         </Row>
-      </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      </Container> */}
+      {/* <img className="background-image-right" src={colorSharp2}></img> */}
+      <div class="project-showcase">
+
+            <h2>Project Showcase</h2>
+            <p>Here are some of my works</p>
+            <a href="project-url-1" class="project rectangle">
+              <img src="projImg1" alt="Project 1"/>
+            </a>
+
+            <a href="project-url-2" class="project square">
+              <img src="image-source-2" alt="Project 2"/>
+            </a>
+
+            <a href="project-url-3" class="project circle">
+              <img src="image-source-3" alt="Project 3"/>
+            </a>
+
+            <a href="project-url-4" class="project rectangle">
+              <img src="image-source-4" alt="Project 4"/>
+            </a>
+        </div>
+
     </section>
   )
 }
