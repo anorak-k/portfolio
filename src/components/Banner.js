@@ -103,7 +103,7 @@ export const Banner = () => {
                 </a>
               </div>
               <div className="asterisk-text" style={asteriskTextStyle()}>
-                <div className="text-2">*This website is still work in progress</div>
+                <div className="text-2">*This website is still a work in progress</div>
               </div>
             </div>
             <div className="mast-left">

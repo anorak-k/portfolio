@@ -14,7 +14,7 @@ const projectData = [
 
 export const Projects = () => {
   return (
-    <div className="projects-section">
+    <div className="projects-section" id='projects'>
       <div className="projects-container">
         <h1>Some of my latest projects</h1>
         {projectData.map((project, index) => (
