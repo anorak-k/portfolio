@@ -976,6 +976,15 @@ img {
   overflow: hidden;
 }
 
+.project-card-arrow{
+  position: absolute;
+    bottom: 12px;
+    right: 5px;
+    font-size: 11vw;
+    font-family: 'Rubik';
+    color: rgba(0, 0, 0, 0.1);
+}
+
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);

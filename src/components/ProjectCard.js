@@ -19,8 +19,7 @@ const ProjectCard = ({ project }) => {
         onClick={handleClick}
       >
         <h3 className="project-card-title">{project.title}</h3>
-        <p className="project-card-description">{project.description}</p>
-        <div className="project-card-arrow">{">"}</div>
+        <div className="project-card-arrow">{"</>"}</div>
       </div>
 
       {isOpen && (
@@ -29,7 +28,6 @@ const ProjectCard = ({ project }) => {
             <button className="project-popup-close" onClick={handleClose}>×</button>
             <h2 className="project-popup-title">{project.title}</h2>
             <p className="project-popup-description">{project.description}</p>
-            {/* Add more content about the project here */}
           </div>
         </div>
       )}
