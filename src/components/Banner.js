@@ -94,8 +94,8 @@ export const Banner = () => {
                 <h1 className="mast-heading-2" style={calculateStyleH(26.5583)}>Engineer</h1>
               </div>
               <div className="mast-heading-div" style={calculateStyleH(30.066, 0.3)}>
-                <h1 className="mast-heading-2">from</h1>
-                <h1 className="mast-heading-2">NYU</h1>
+                <h1 className="mast-heading-2">in</h1>
+                <h1 className="mast-heading-2">NYC</h1>
                 <a href="#" className="spinned-outer w-inline-block w-lightbox" aria-label="open lightbox" onMouseEnter={() => setIsHovered(true)} 
                    onMouseLeave={() => setIsHovered(false)}>
                 <h1 className="mast-heading-2">*</h1>
@@ -103,7 +103,7 @@ export const Banner = () => {
                 </a>
               </div>
               <div className="asterisk-text" style={asteriskTextStyle()}>
-                <div className="text-2">*Graduating May 2024</div>
+                <div className="text-2">*This website is still work in progress</div>
               </div>
             </div>
             <div className="mast-left">

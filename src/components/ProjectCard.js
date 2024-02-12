@@ -20,9 +20,14 @@ const ProjectCard = ({ project }) => {
       >
         <h3 className="project-card-title">{project.title}</h3>
         <div className="project-card-arrow">{"</>"}</div>
+        <div className="project-card-tags">
+          {project.tags.map((tag, index) => (
+            <span key={index} className="project-tag">{tag}</span>
+          ))}
+        </div>
       </div>
 
-      {isOpen && (
+      {/* {isOpen && (
         <div className="project-popup" style={{ backgroundColor: project.color }}>
           <div className="project-popup-content">
             <button className="project-popup-close" onClick={handleClose}>×</button>
@@ -30,7 +35,7 @@ const ProjectCard = ({ project }) => {
             <p className="project-popup-description">{project.description}</p>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };
