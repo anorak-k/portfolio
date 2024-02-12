@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Skills />
-      {/* <Projects /> */}
+      {/* <Skills /> */}
+      <Projects />
       {/* <Contact /> */}
       {/* <Footer /> */}
     </div>

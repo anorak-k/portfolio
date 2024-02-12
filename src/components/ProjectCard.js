@@ -1,15 +1,40 @@
-import { Col } from "react-bootstrap";
+import React, { useState } from 'react';
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+const ProjectCard = ({ project }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
-        {/* <img src={imgUrl} /> */}
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
-        </div>
+    <>
+      <div 
+        className="project-card" 
+        style={{ backgroundColor: project.color }} 
+        onClick={handleClick}
+      >
+        <h3 className="project-card-title">{project.title}</h3>
+        <p className="project-card-description">{project.description}</p>
+        <div className="project-card-arrow">{">"}</div>
       </div>
-    </Col>
-  )
-}
+
+      {isOpen && (
+        <div className="project-popup" style={{ backgroundColor: project.color }}>
+          <div className="project-popup-content">
+            <button className="project-popup-close" onClick={handleClose}>×</button>
+            <h2 className="project-popup-title">{project.title}</h2>
+            <p className="project-popup-description">{project.description}</p>
+            {/* Add more content about the project here */}
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default ProjectCard;

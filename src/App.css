@@ -646,7 +646,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 25px;
   margin-left: 0;
   font-family: 'Austin-Bold';
-  font-size: 12.5vw;
+  font-size: 8.7vw;
   font-weight: 400;
   line-height: 85%;
 }
@@ -964,209 +964,178 @@ img {
 }
 
 /************ Projects Css ************/
-.project {
-  padding: 80px 0;
+.project-card {
+  width: 200px;
+  height: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
   position: relative;
-  padding: 0 0 50px 0;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 5%;
-}
-.project h2 {
-	/* font-size: 45px;
-	font-weight: 700;
-  */
-  text-align: left;
-	font-weight: 400;
-  color: #1e242c;
-  font-family: "Austin-Italic";
-  font-size: 83px;
-  line-height: 65.8px;
-  font-style: normal;
-  letter-spacing: -.02em;
-  min-height: 50px;
-
-}
-.project p {
-  /* color: #B8B8B8; */
-  text-align: left;
-  color: #1e242c;
-  font-size: 22px;
-  letter-spacing: -.02em;
-  line-height: 1.5em;
-  margin: 14px 0 30px auto;
-  width: 56%;
-  font-family: 'Satoshi';
-  font-weight: 400;
-  font-style: normal;
-}
-
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
+
+.project-content h3,
+.project-content p {
+  margin: 0;
+}
+
+.project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-}
-.project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
-}
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
-}
-.proj-imgbx {
-  position: relative;
-  /* border-radius: 30px; */
-  overflow: hidden;
-  margin-bottom: 24px;
-  /* opacity: 0.35; */
-}
-/* .proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
   height: 100%;
-  opacity: 10;
-} 
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-/* .proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-} */
-
-.proj-imgbx:hover::before {
-  height: 100%;
-  opacity: 10;
-} 
-
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-.background-image-right {
-  top: 65%;
-  position: absolute;
-  bottom: 0;
-  width: 30%;
-  right: -95px;
-  transform: rotate(-17deg);
-  z-index: -6;
-}
-
-
-.project-showcase {
-  display: grid;
-  grid-template-areas:
-    '. rect1 . square .'
-    'circle . rect2 . .';
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.project {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  position: relative;
+  z-index: 1000;
+}
+
+.project-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: transform 0.3s ease;
 }
 
-.project img {
+.project-popup-content h3,
+.project-popup-content p {
+  color: white; /* Adjust the color so it's visible on the colored background */
+}
+
+.projects {
+  text-align: center;
+}
+
+
+
+
+.projects-container {
+  position: relative;
   width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+  height: 100vh;
+  padding: 4rem;
+  background-color: #f5f5f5;
 }
 
-.project:hover img {
-  transform: scale(1.1);
+.projects-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.rectangle {
-  width: 300px;
-  height: 200px;
-}
-
-.square {
+.project-card {
   width: 200px;
-  height: 200px;
+  height: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: absolute;
 }
 
-.circle {
+.project-card h3 {
+  margin-top: 0;
+}
+
+
+/* Positioning the project cards manually */
+.project-card:nth-child(2) {
+  top: 17%;
+  left: 7%;
+  transform: rotate(-16deg);
+}
+
+.project-card:nth-child(3) {
+  top: 24%;
+  left: 33%;
+  transform: rotate(11deg);
+}
+
+.project-card:nth-child(4) {
+  top: 61%;
+  left: 18%;
+  transform: rotate(16deg);
+}
+
+.project-card:nth-child(5) {
+  top: 16%;
+  left: 81%;
+  transform: rotate(12deg);
+}
+
+.project-card:nth-child(6) {
+  top: 35%;
+  left: 60%;
+  transform: rotate(-10deg);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 4rem;
+  background-color: #f5f5f5; /* Adjust the background color as needed */
+}
+
+.projects-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-card {
   width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  height: 250px;
+  margin: 1rem;
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(-5deg); /* Rotate the card for trapezoid effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -50px; /* Adjust to create the trapezoid shape */
+  right: -50px; /* Adjust to create the trapezoid shape */
+  background: inherit;
+  transform: skewY(5deg); /* Skew the ::before content for trapezoid effect */
+  z-index: -1;
+}
+
+.project-card h3, .project-card p {
+  position: relative; /* Ensure the text appears above the skewed ::before */
+  color: white; /* Adjust text color for better visibility */
+  z-index: 1;
+}
+
+
+
+/* Positioning the project cards manually */
+/* ... (Your existing positioning styles) ... */
+
+.project-card:hover {
+  transform: scale(1.05) rotate(-5deg); /* Scale and maintain rotation on hover */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /************ Projects Css ************/
