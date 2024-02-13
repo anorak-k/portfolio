@@ -4,11 +4,13 @@
   src: url('./assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
+
 @font-face {
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
+
 @font-face {
   font-family: Centra;
   src: url('./assets/font/CentraNo2-Book.ttf');
@@ -29,6 +31,7 @@
   font-family: DidactGothic-Regular;
   src: url('./assets/font/DidactGothic-Regular.ttf');
 }
+
 @font-face {
   font-family: Askan;
   src: url('./assets/font/Hoftype\ \ Askan.otf');
@@ -53,6 +56,7 @@
   font-family: Satoshi;
   src: url('./assets/font/Satoshi-Variable.ttf');
 }
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -74,13 +78,22 @@ body {
   font-family: 'Satoshi' !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p, a, li, button, ul {
+p,
+a,
+li,
+button,
+ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -101,7 +114,9 @@ button {
   background-color: transparent;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
@@ -119,6 +134,7 @@ p.success {
 p.danger {
   color: red;
 }
+
 /************ New site Css ************/
 .section {
   z-index: 1;
@@ -136,6 +152,7 @@ p.danger {
 .parallax-wrapper {
   border-radius: 0;
 }
+
 .container {
   max-height: none;
   max-width: none;
@@ -208,6 +225,7 @@ p.danger {
   display: flex;
   transform: rotate(-10deg);
 }
+
 .w-button {
   display: inline-block;
   padding: 9px 15px;
@@ -232,9 +250,11 @@ p.danger {
   position: relative;
   transform: translate(0, 6vh);
 }
+
 * {
   box-sizing: border-box;
 }
+
 .div-button-about {
   width: 150px;
   height: 70px;
@@ -273,6 +293,7 @@ p.danger {
 .avatar.hide-desktop {
   border-radius: 13px;
 }
+
 .avatar {
   z-index: auto;
   width: 12vw;
@@ -293,6 +314,7 @@ p.danger {
 .buttonmasthover.div-button-about {
   cursor: pointer;
 }
+
 .about-button-no-dots {
   width: 151px;
   height: 70px;
@@ -309,6 +331,7 @@ p.danger {
   display: grid;
   position: absolute;
 }
+
 .button-about-2 {
   width: 148px;
   height: 69px;
@@ -328,6 +351,7 @@ p.danger {
   line-height: 24px;
   display: flex;
 }
+
 .dots {
   width: auto;
   height: auto;
@@ -348,9 +372,11 @@ p.danger {
   display: grid;
   transform: scale(1.05)translate(0, -2px);
 }
+
 #w-node-_8b5f9212-3f17-407f-d140-509c4046460e-4f8d20bd {
   justify-self: start;
 }
+
 .dot-2 {
   width: 10px;
   height: 10px;
@@ -359,10 +385,12 @@ p.danger {
   border-radius: 0;
   transform: translate(0);
 }
+
 #w-node-_8b5f9212-3f17-407f-d140-509c4046460f-4f8d20bd {
   align-self: auto;
   justify-self: end;
 }
+
 #w-node-_8b5f9212-3f17-407f-d140-509c40464611-4f8d20bd {
   justify-self: end;
 }
@@ -404,6 +432,7 @@ p.danger {
   font-weight: 700;
   box-shadow: 4px 4px 13px -4px rgba(0, 0, 0, .2);
 }
+
 .button-linkedin {
   width: 2.5vw;
   height: 2.5vw;
@@ -427,6 +456,7 @@ p.danger {
   display: flex;
   transform: rotateX(6deg)rotateY(0)rotateZ(30deg);
 }
+
 .buttonmasthover.button-work {
   width: 10vw;
   height: 10vw;
@@ -437,6 +467,7 @@ p.danger {
   margin-top: 0;
   font-size: 1.5vw;
 }
+
 .button-work {
   width: 12vw;
   height: 12vw;
@@ -458,6 +489,7 @@ p.danger {
   transform: rotate(3deg);
   text-align: start;
 }
+
 .mast-right {
   height: 140%;
   max-width: none;
@@ -476,12 +508,14 @@ p.danger {
   display: flex;
   position: static;
 }
+
 .mast-heading-div {
   grid-column-gap: 3vw;
   grid-row-gap: 3vw;
   align-items: flex-start;
   display: flex;
 }
+
 .mast-heading-2 {
   max-width: none;
   color: #000;
