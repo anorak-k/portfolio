@@ -600,7 +600,13 @@ img {
 @media screen and (min-width: 1280px) {}
 
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {
+  .container {
+    padding-top: 100px;
+    padding-left: 8rem;
+    padding-right: 7rem;
+  }
+}
 
 
 
@@ -609,12 +615,20 @@ img {
 
 
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .section {
+    border-radius: 0;
+  }
+}
 
 
 
 
-@media screen and (max-width: 479px) {}
+@media screen and (max-width: 479px) {
+  .mast-grid {
+    max-height: 30vh;
+  }
+}
 
 /************ Banner Css ************/
 /* @media (max-width: 768px) {
