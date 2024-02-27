@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f18fccc1.css",
-    "main.js": "/static/js/main.8787c5d3.js",
+    "main.js": "/static/js/main.2ea86a95.js",
     "static/js/592.7881a785.chunk.js": "/static/js/592.7881a785.chunk.js",
     "static/media/Atomic Marker Regular.otf": "/static/media/Atomic Marker Regular.f14fd2c5321eeaeed42e.otf",
     "static/media/nyu-brown.png": "/static/media/nyu-brown.09d74211c81aa3ade026.png",
@@ -38,11 +38,11 @@
     "index.html": "/index.html",
     "static/media/nav-icon2.svg": "/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.f18fccc1.css.map": "/static/css/main.f18fccc1.css.map",
-    "main.8787c5d3.js.map": "/static/js/main.8787c5d3.js.map",
+    "main.2ea86a95.js.map": "/static/js/main.2ea86a95.js.map",
     "592.7881a785.chunk.js.map": "/static/js/592.7881a785.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f18fccc1.css",
-    "static/js/main.8787c5d3.js"
+    "static/js/main.2ea86a95.js"
   ]
 }
